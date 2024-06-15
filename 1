@@ -1,0 +1,20 @@
+##4.1
+import random
+
+# Assign a random number between 1 and 10 to secret
+secret = random.randint(1, 10)
+
+# Assign a random number between 1 and 10 to guess
+guess = random.randint(1, 10)
+
+# Print the values of secret and guess for reference
+print(f"Secret: {secret}")
+print(f"Guess: {guess}")
+
+# Conditional tests
+if guess < secret:
+    print("too low")
+elif guess > secret:
+    print("too high")
+else:
+    print("just right")
