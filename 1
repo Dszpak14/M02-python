@@ -1,20 +1,75 @@
 ##4.1
 import random
 
-# Assign a random number between 1 and 10 to secret
+
 secret = random.randint(1, 10)
 
-# Assign a random number between 1 and 10 to guess
+
 guess = random.randint(1, 10)
 
-# Print the values of secret and guess for reference
+
 print(f"Secret: {secret}")
 print(f"Guess: {guess}")
 
-# Conditional tests
+
 if guess < secret:
-    print("too low")
+    print("low")
 elif guess > secret:
-    print("too high")
+    print("high")
 else:
-    print("just right")
+    print("right")
+
+
+##4.2
+
+
+small = True
+green = False
+
+
+if small and green:
+    print("Matches: pea")
+elif small and not green:
+    print("Matches: cherry")
+elif not small and green:
+    print("Matches: watermelon")
+else:
+    print("Matches: pumpkin")
+
+
+    ##6.2
+
+    
+guess_me = 7
+number = 1
+
+
+while number <= guess_me:
+    if number < guess_me:
+        print('low')
+    elif number == guess_me:
+        print('got it')
+        break  
+    else:
+        print('wrong')
+        break  
+    
+   
+    number += 1
+
+
+##6.3
+
+guess_me = 5
+
+
+for number in range(10):
+    if number < guess_me:
+        print('low')
+    elif number == guess_me:
+        print('got it!')
+        break  
+    else:
+        print('wrong')
+        break  
+
